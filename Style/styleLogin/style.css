@@ -1,0 +1,68 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+ body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+
+.parsley-errors-list {
+    position: sticky;
+    bottom: -5px;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+    color: #ff0400;
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+
+
+.alert-dismissible {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 400px;
+    z-index: 1050;
+}
+
+.alert span a {
+    font-weight: bold;
+    color: inherit;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+}
+
+.form-header::after {
+    content: '';
+    display: block;
+    width: 8rem;
+    height: 0.3rem;
+    background-color: #ffc800;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: absolute;
+}
